@@ -78,4 +78,4 @@ console.log(myArray);*/
 let myArray = Array.from(Array(n).keys());
 console.log(myArray);*/
 
-//Dupa opinia mea cea mai buna metoda este Map, necesita mai putin cod
+//Dupa opinia mea cea mai buna metoda este Map, necesita mai putin cod, insa cea mai rapida este For
