@@ -2,6 +2,8 @@
 
 n = prompt('Introduceti cate elemente va avea matricea');
 let myArray = [n];
+//todo js деструктуризация - прочитать
+let [m] = myArray;
 console.log('1) Prima metoda for: ');
 for(let i = 0; i <= n; i++){
 	myArray[i] = i; //initializam sirul de numere
@@ -65,7 +67,7 @@ for(var i = 0; i <= n; i++){
 }
 	myArray.forEach(i => console.log(_, i) => i);*/
 
-
+//todo
 //----Varianta cu Map--->
 /*console.log('7) Metoda Map: ');
 let myArray = Array(10).fill().map((_, i) => i);
@@ -74,8 +76,8 @@ console.log(myArray);*/
 
 //----Varianta cu ES6--->
 
-/*console.log('8) Metoda ES6: ');
+console.log('8) Metoda ES6: ');
 let myArray = Array.from(Array(n).keys());
-console.log(myArray);*/
+console.log(myArray);
 
 //Dupa opinia mea cea mai buna metoda este Map, necesita mai putin cod, insa cea mai rapida este For

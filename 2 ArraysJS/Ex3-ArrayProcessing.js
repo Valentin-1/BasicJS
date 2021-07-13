@@ -3,7 +3,7 @@ let styles = ['Джаз', 'Блюз'];
 console.log(styles);
 
 //2)Adaugarea elementului, 2 este pozitia
-styles[2] = 'Рок-н-рол'
+styles[5] = 'Рок-н-рол'
 console.log(styles);
 
 //3)Adugarea si inlacuirea 
@@ -17,6 +17,3 @@ console.log(styles);
 //5)Adaugarea elementelor la inceputul sirului
 styles.unshift('Рэп', 'Регги');
 console.log(styles);
-
-
-

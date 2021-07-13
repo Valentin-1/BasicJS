@@ -8,24 +8,24 @@ let studentList = [
 	{name: "Maxim", marks: [4,5,7,7,6]}
 ]
 
-let averages = studentList.map(s => {
-	return {
-		name: s.name,
-		avg: s.marks.reduce((item, index) => item + index) / s.marks.length
-	};
-});
+let averages = studentList.map(s => ({
+	name: s.name,
+	avg: s.marks.reduce((item, index) => item + index) / s.marks.length
+}));
 console.log(averages);
 
 let resultAvg = averages.filter(item => item.avg < 5); //In comparatie cu "find" care returneaza doar primul element gasit, "filter" returneaza toate obiectele 
 console.log('Studenti cu nota medie mai mica ca 5:', resultAvg)
 
 //------Nu lucreaza cum trebuie si nici nu am gasit iesire din situatie
-/*let max = studentList[0];
-for(let i = 1; i < studentList; i++) {
-	if(averages[i] > max) {
-		max = averages[i];
-	}
-}
+let [max] = studentList;
+//todo js spread
+Math.max(...studentList.map(item => item.marks))
+// for(const i of studentList.length) {
+// 	if(averages[i] > max) {
+// 		max = averages[i];
+// 	}
+// }
 
 let min = studentList[0];
 for(let i = 1; i < studentList; i++) {
@@ -33,8 +33,9 @@ for(let i = 1; i < studentList; i++) {
 		max = studentList[i];
 	}
 }
-console.log('Studentul cu nota media cea mai mare' + max + 'Studentul cu nota medie minima' + min)*/
+console.log('Studentul cu nota media cea mai mare' + max + 'Studentul cu nota medie minima' + min)
 
 let avgSort = averages;
+//todo read about sort
 console.log(avgSort.sort((item, index) => item.avg - index.avg));
 
