@@ -1,5 +1,6 @@
 'use strict';
 
+//todo let => const
 let number = prompt('Introduceti numarul')
 switch(number){
 	case '0':

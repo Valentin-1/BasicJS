@@ -1,5 +1,6 @@
 n = prompt('Introduceti un numar ')
 
+//todo try with math max
 if(n > 1){
 	alert('1');
 }
