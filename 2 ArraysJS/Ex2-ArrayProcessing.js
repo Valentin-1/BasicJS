@@ -27,12 +27,13 @@ Math.max(...studentList.map(item => item.marks))
 // 	}
 // }
 
-let min = studentList[0];
-for(let i = 1; i < studentList; i++) {
+let [min] = studentList;
+Math.min(...studentList.map(item => item.marks))
+/*for(let i = 1; i < studentList; i++) {
 	if(averages[i] < min) {
 		max = studentList[i];
 	}
-}
+}*/
 console.log('Studentul cu nota media cea mai mare' + max + 'Studentul cu nota medie minima' + min)
 
 let avgSort = averages;
