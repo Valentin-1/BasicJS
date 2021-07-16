@@ -4,4 +4,4 @@ function extract(start, end){
 	return array.slice(start, end + 1);
 }
 
-console.log(extract(2, 5));
+console.log(extract(2, 4));
