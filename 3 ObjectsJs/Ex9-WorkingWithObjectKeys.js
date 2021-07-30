@@ -9,16 +9,12 @@ const weekDays = {
 };
 
 function revers(obj){
-	let dayRo;
-	let dayEn;
-	for(let key in obj){
-		dayEn = key;
-		dayRo = obj[key];
-		delete obj[key];
-		key = dayRo;
-		obj[key] = dayEn;
-	}
+	const rev = {};
+	Object.keys(obj).forEach(function(value){
+	let key = obj[value];
+	rev[key] = value;
+	});
+	return rev;
 }
 
-revers(weekDays);
-console.log(weekDays);
+console.log(revers(weekDays));
